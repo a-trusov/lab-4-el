@@ -22,12 +22,14 @@ public class OperatorsXmlBasedTest {
 	public void testLessThen() {
 		Operators op = (Operators) context.getBean("operatorsBean");
 		assertTrue(op.isLessThanTest());
+		System.out.println("moscowBean.population > parisBean.population => " + op.isLessThanTest());
 	}
 
 	@Test
 	public void testAdd() {
 		Operators op = (Operators) context.getBean("operatorsBean");
 		assertEquals(op.getAddTest(), 14000000);
+		System.out.println("moscowBean.population + parisBean.population = " + op.getAddTest());
 	}
 
 	@After
